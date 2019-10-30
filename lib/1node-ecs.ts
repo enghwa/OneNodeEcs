@@ -26,9 +26,9 @@ export class oneNodeEcs extends cdk.Stack {
       retention: logs.RetentionDays.ONE_MONTH
     })
     const asgSpot = new autoscaling.AutoScalingGroup(this, "SpotFleet1", {
-      instanceType: ec2.InstanceType.of(ec2.InstanceClass.T3A, ec2.InstanceSize.SMALL),
+      instanceType: ec2.InstanceType.of(ec2.InstanceClass.T3A, ec2.InstanceSize.MICRO),
       machineImage: new ecs.EcsOptimizedAmi(),
-      spotPrice: '0.0072',
+      spotPrice: '0.0030',
       updateType: autoscaling.UpdateType.REPLACING_UPDATE,
       desiredCapacity: 1,
       maxCapacity: 1,
