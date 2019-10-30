@@ -1,0 +1,17 @@
+*.js
+!jest.config.js
+*.d.ts
+node_modules
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+
+
+.vscode/*
+README-internal.md
+haproxy/*
+lib/lifecyclehook*
+lib/easycontainer*.ts
+nginx-proxy/*
+streamlit/*

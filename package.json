@@ -1,0 +1,29 @@
+{
+  "name": "easycontainer",
+  "version": "0.1.0",
+  "bin": {
+    "easycontainer": "bin/easycontainer.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "^1.15.0",
+    "@types/jest": "^24.0.20",
+    "@types/node": "^12.11.7",
+    "aws-cdk": "^1.15.0",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.1.0",
+    "typescript": "~3.6.2"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-ec2": "^1.15.0",
+    "@aws-cdk/aws-ecs": "^1.15.0",
+    "@aws-cdk/core": "^1.15.0",
+    "source-map-support": "^0.5.15"
+  }
+}
