@@ -23,7 +23,7 @@ export class oneNodeEcs extends cdk.Stack {
 
     const logGroup = new logs.LogGroup(this, "oneNodeEcsLogGroup", {
       removalPolicy: cdk.RemovalPolicy.DESTROY,
-      retention: logs.RetentionDays.ONE_MONTH
+      retention: logs.RetentionDays.ONE_WEEK
     })
     const asgSpot = new autoscaling.AutoScalingGroup(this, "SpotFleet1", {
       instanceType: ec2.InstanceType.of(ec2.InstanceClass.T3A, ec2.InstanceSize.MICRO),
